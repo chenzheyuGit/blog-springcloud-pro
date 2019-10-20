@@ -120,5 +120,6 @@
 		<module>blog-zuul-server</module>
 		<module>blog-ribbon-server</module>
 		<module>blog-coincap-client</module>
+		<module>blog-wx-client</module>
 	</modules>
 </project>

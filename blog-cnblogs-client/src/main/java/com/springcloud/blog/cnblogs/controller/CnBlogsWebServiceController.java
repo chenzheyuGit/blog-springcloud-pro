@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.springcloud.blog.api.tools.CnBlogsWebServiceApiTools;
 
+import cn.hutool.core.lang.Console;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -24,6 +25,7 @@ public class CnBlogsWebServiceController {
 	@GetMapping("/get48HoursTopViewPosts/{itemCount}")
 	@ApiOperation("获取48小时排行文章")
 	public String get48HoursTopViewPosts(@PathVariable String itemCount) {
+		Console.log("cnblogs");
 		
 		return CnBlogsWebServiceApiTools.get48HoursTopViewPosts(itemCount);
 	}

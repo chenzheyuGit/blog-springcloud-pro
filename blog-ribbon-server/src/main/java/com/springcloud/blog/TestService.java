@@ -1,4 +1,6 @@
 package com.springcloud.blog;
+import javax.xml.crypto.dsig.XMLObject;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -11,12 +13,12 @@ public class TestService {
     @Autowired
     RestTemplate restTemplate;
     
-    @HystrixCommand(fallbackMethod = "hiError")
-    public String hiService(String name) {
-        return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
+    @HystrixCommand(fallbackMethod = "returnError")
+    public String get48HoursTopViewPosts(String itemCount) {
+        return restTemplate.getForObject("http://cnblogs-client/cnblogs/get48HoursTopViewPosts/"+itemCount,String.class);
     }
 
-    public String hiError(String name) {
-        return "hi,"+name+",sorry,error!";
+    public String returnError(String itemCount) {
+        return itemCount+" error";
     }
 }

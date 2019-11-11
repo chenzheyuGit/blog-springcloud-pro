@@ -121,5 +121,7 @@
 		<module>blog-ribbon-server</module>
 		<module>blog-coincap-client</module>
 		<module>blog-wx-client</module>
+		<module>blog-config-server</module>
+		<module>blog-config-client</module>
 	</modules>
 </project>

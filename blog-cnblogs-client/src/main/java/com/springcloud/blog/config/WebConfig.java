@@ -18,7 +18,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
     	
         //静态资源放行
-    	registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+    	//registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
     }
     
     

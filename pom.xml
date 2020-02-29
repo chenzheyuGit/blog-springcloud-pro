@@ -123,5 +123,6 @@
 		<module>blog-wx-client</module>
 		<module>blog-config-server</module>
 		<module>blog-config-client</module>
+		<module>blog-gateway-client</module>
 	</modules>
 </project>

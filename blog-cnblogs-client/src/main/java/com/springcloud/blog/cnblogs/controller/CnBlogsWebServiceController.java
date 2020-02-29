@@ -33,7 +33,7 @@ public class CnBlogsWebServiceController {
 	
 	/**
 	 * 分页获取推荐博客列表
-	 * @param itemCount
+	 * @param
 	 * @return
 	 */
 	@GetMapping("/getRecommend/{pageIndex}/{pageSize}")
